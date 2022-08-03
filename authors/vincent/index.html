@@ -101,9 +101,29 @@
 <main>
    <div class="wrapper  page page--author">
       <div class="hero">
-            <h1>Vincent <sup>(25)</sup></h1>
+            <h1>Vincent <sup>(26)</sup></h1>
       </div>
       <div class="l-masonry l-masonry--3">
+            <article class="c-card ">
+               <div class="c-card__wrapper">
+                  <header class="c-card__header">
+                     <h2 class="c-card__title">
+                        <a href="https://myrealbook.vintherine.org/la-grille-harmonique-version-22310-et-suivantes.html" class="invert">
+                           La grille harmonique depuis la version 2.23.10
+                        </a>
+                     </h2>
+                  </header>
+                        <div class="c-card__text"><p>Comme évoqué dans le <a href="https://myrealbook.vintherine.org/passage-en-version-223-de-lilypond.html">post précédant</a> la grille harmonique est maintenant intégrée dans l'application. Par rapport à la fonction écrite en sheme <a href="https://myrealbook.vintherine.org/grille-harmonique.html">décrite ici</a> il y a quelques évolutions significatives.</p>
+<p>Les plus importantes sont l'utilisation de la notation proportionnelle qui permet d'avoir des cases exactement de même longueurs d'une ligne à l'autre (pour autant qu'il y en ait le même nombre) et un contexte particulier (ChordGridScore) permettant d'associer une grille à d'autre contexte tels Staff, RhythmicStaff ou Dynamics. </p>
+<pre>\new ChordGridScore &lt;&lt;<br>  \new ChordGrid \chordmode { ../.. }<br>  % \new RhythmicStaff ou \new Dynamics...<br>&gt;&gt;</pre>
+</div>
+                     <footer class="c-card__meta">
+                           <time datetime="2022-08-01T12:26">
+                                 1 août 2022
+                           </time>
+                     </footer>
+               </div>
+            </article>
             <article class="c-card ">
                <div class="c-card__wrapper">
                   <header class="c-card__header">
@@ -395,35 +415,6 @@
                      <footer class="c-card__meta">
                            <time datetime="2021-10-31T19:36">
                                  31 octobre 2021
-                           </time>
-                     </footer>
-               </div>
-            </article>
-            <article class="c-card ">
-               <div class="c-card__wrapper">
-                  <header class="c-card__header">
-                     <h2 class="c-card__title">
-                        <a href="https://myrealbook.vintherine.org/inserer-un-qr-code-dans-une-partition.html" class="invert">
-                           Insérer un QR-Code dans un markup
-                        </a>
-                     </h2>
-                  </header>
-                        <div class="c-card__text"><p>Sur la liste de discussion des utilisateurs francophones de Lilypond a été évoqué la possibilité mettre un QR-code avec une adresse web sur des partitions. En voilà une idée qu'elle est bonne. Et hop, exécution !</p>
-<h5>I -  se documenter</h5>
-<p>La page de référence est ici : <a href="http://lilypond.org/doc/v2.22/Documentation/notation/graphic">http://lilypond.org/doc/v2.22/Documentation/notation/graphic</a></p>
-<p>C'est assez sommaire et pour une fois non traduit en français. </p>
-<pre><code>\epsfile <var>axis</var> (number) <var>size</var> (number) <var>file-name</var> (string)  </code></pre>
-<p>Inline an EPS image. The image is scaled along <var>axis</var> to <var>size</var>.</p>
-<pre><code>\markup {
-  \general-align #Y #DOWN {
-    \epsfile #X #20 #"context-example.eps"
-  }
-}
-</code></pre>
-</div>
-                     <footer class="c-card__meta">
-                           <time datetime="2021-10-30T13:27">
-                                 30 octobre 2021
                            </time>
                      </footer>
                </div>
