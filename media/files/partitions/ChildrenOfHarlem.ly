@@ -116,7 +116,7 @@ Ossature = {
   s2.*4 \break
   \polyMark #'rde \markup \right-column {
     \concat { "after solos play last " \box A }
-    "Then Vamp last 4 bars" }
+    "Then Vamp on last 4 bars" }
   \bar ".."
 }
 
@@ -184,7 +184,7 @@ grille = \chordmode {
   \repeat percent 4 { b1:13sus4 }
   \polyMark #'rde \markup \right-column {
     \concat { "after solos play last " \box A }
-    "Then Vamp last 4 bars" }
+    "Then Vamp on last 4 bars" }
   \bar ".." }
 
 
