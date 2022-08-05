@@ -83,7 +83,7 @@ realBookTitle = \markup {
   tagline = ##f
 }
 
-message = \markup "AABA Form"
+message = \markup \fill-line \right-align { \null \fontsize #3 "AABA Form " }
 
 Ossature = {
   %\time 3/4
